@@ -808,6 +808,9 @@ input#checkboxLabel:checked ~ .box span{
 .flex{
   display: flex;
 }
+.align-center{
+  align-items: center;
+}
 .inline-flex{
   display: inline-flex;
 }
@@ -1338,6 +1341,9 @@ input#checkboxLabel:checked ~ .box span{
 }
 .text-center{
   text-align: center;
+}
+.text-upper{
+  text-transform: uppercase;
 }
 .text-end{
   text-align: end;

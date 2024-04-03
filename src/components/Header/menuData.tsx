@@ -1,84 +1,74 @@
 import { Menu } from "@/types/menu";
+import { IoFlashOutline, IoFlameOutline, IoStar, IoBriefcaseOutline, IoMail } from "react-icons/io5";
+
 
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "Latest airdrops",
     path: "/",
     newTab: false,
+    icon: <IoFlashOutline />,
   },
   {
     id: 2,
-    title: "About",
+    title: "Hot airdrops",
     path: "/about",
     newTab: false,
-  },
-  {
-    id: 33,
-    title: "Blog",
-    path: "/blog",
-    newTab: false,
+    icon: <IoFlameOutline />,
   },
   {
     id: 3,
-    title: "Support",
-    path: "/contact",
+    title: "Potiental airdrops",
     newTab: false,
+    submenu: [
+      {
+        id: 31,
+        title: "Solana Airdrops",
+        path: "/about",
+        newTab: false,
+      },
+    ],
+    icon: <IoStar />,
   },
   {
     id: 4,
-    title: "Pages",
+    title: "Holder airdrops",
     newTab: false,
     submenu: [
       {
         id: 41,
-        title: "About Page",
+        title: "BTC Holder Airdrops",
         path: "/about",
         newTab: false,
       },
       {
         id: 42,
-        title: "Contact Page",
+        title: "Atom holder airdrops",
         path: "/contact",
         newTab: false,
       },
       {
         id: 43,
-        title: "Blog Grid Page",
+        title: "Eth holder airdrops",
         path: "/blog",
         newTab: false,
       },
       {
         id: 44,
-        title: "Blog Sidebar Page",
+        title: "Forks",
         path: "/blog-sidebar",
         newTab: false,
       },
-      {
-        id: 45,
-        title: "Blog Details Page",
-        path: "/blog-details",
-        newTab: false,
-      },
-      {
-        id: 46,
-        title: "Sign In Page",
-        path: "/signin",
-        newTab: false,
-      },
-      {
-        id: 47,
-        title: "Sign Up Page",
-        path: "/signup",
-        newTab: false,
-      },
-      {
-        id: 48,
-        title: "Error Page",
-        path: "/error",
-        newTab: false,
-      },
     ],
+    icon: <IoBriefcaseOutline />,
+  },
+  {
+    id: 5,
+    title: "Contact",
+    path: "/contact",
+    newTab: false,
+    icon: <IoMail />,
   },
 ];
 export default menuData;

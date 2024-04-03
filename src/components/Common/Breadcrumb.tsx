@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FlashOutline } from "react-icons/io5";
 
 const Breadcrumb = ({
   pageName,
@@ -30,7 +31,7 @@ const Breadcrumb = ({
                       href="/"
                       className="pr-1 text-base font-medium text-body-color hover:text-primary"
                     >
-                      Home
+                      Latest Airdrop
                     </Link>
                     <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
