@@ -44,7 +44,7 @@ const Header = () => {
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            : "bg-transparent"
         }`}
       >
         <div className="container">
@@ -110,7 +110,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex align-center py-2 text-base text-upper lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex items-center py-2 text-base text-upper lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -126,6 +126,8 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-upper text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
+                              {menuItem.icon}
+                              <span className="pl-3"></span>
                               {menuItem.title}
                               <span className="pl-3">
                                 <svg width="25" height="24" viewBox="0 0 25 24">

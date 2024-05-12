@@ -661,6 +661,9 @@ input#checkboxLabel:checked ~ .box span{
 .top-6{
   top: 1.5rem;
 }
+.top-26{
+  top: 26px;
+}
 .top-7{
   top: 1.75rem;
 }
@@ -799,6 +802,9 @@ input#checkboxLabel:checked ~ .box span{
 .mt-\[6px\]{
   margin-top: 6px;
 }
+.mt-5{
+  margin-top: 0.5rem;
+}
 .block{
   display: block;
 }
@@ -807,9 +813,6 @@ input#checkboxLabel:checked ~ .box span{
 }
 .flex{
   display: flex;
-}
-.align-center{
-  align-items: center;
 }
 .inline-flex{
   display: inline-flex;
@@ -1341,9 +1344,6 @@ input#checkboxLabel:checked ~ .box span{
 }
 .text-center{
   text-align: center;
-}
-.text-upper{
-  text-transform: uppercase;
 }
 .text-end{
   text-align: end;
